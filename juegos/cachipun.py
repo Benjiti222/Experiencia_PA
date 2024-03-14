@@ -30,5 +30,6 @@ def cachipun():
             fin="Usuario gana"
         else:
             fin="Compu gana"
-    return fin
+    print(fin)
+    return
     pass
