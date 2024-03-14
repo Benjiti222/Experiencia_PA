@@ -5,9 +5,7 @@ def adivinar_par_o_impar():
     N = random.randint(1, 10)  # Genera un número entre 1 y 10
     y = str(input("¿Estás seguro?"))
     if y=="si":
-        print("checkpoint1")
         if x.lower() == "par":
-            print("checkpoint2")
             if N % 2 == 0:
                 R = "Correcto :)"
             else:
@@ -17,7 +15,7 @@ def adivinar_par_o_impar():
                 R = "Correcto :)"
             else:
                 R = "Incorrecto :("
-        print(R)
+        print(R, "el numero es ", N)
     elif y=="no":
         x = input("Entonces, ¿par o impar?: ")
         if x.lower() == "par":
@@ -30,7 +28,7 @@ def adivinar_par_o_impar():
                 R = "Correcto :)"
             else:
                 R = "Incorrecto :("
-        print(R)
+        print(R, "el numero es ", N)
     return R
 
 
